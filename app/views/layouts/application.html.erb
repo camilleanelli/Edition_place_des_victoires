@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Editions_Menges_Place_Des_Victoires</title>
+  <title><%=yield(:title)%> | Editions Mengès Place Des Victoires</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,10 +11,11 @@
     <p><img src="logo"/></p>
     <nav>
     <ul>
-      <li>Home</li>
+      <li><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/">Home</a></li>
       <li>Contact</li>
       <li>Info pratiques</li>
       <li>Boutique</li>
+      <li>Lien facebook</li>
       </ul>
     </nav>
     
@@ -23,8 +24,21 @@
  
   
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="content">
 
 <%= yield %>
-
+  </div>
+  <footer>
+<div class="fb-like" data-href="https://www.facebook.com/Editions.Place.des.Victoires" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+  </footer>
 </body>
 </html>
