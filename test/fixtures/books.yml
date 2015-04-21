@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  id: 1
+  text: MyText
 
 two:
   name: MyString
-  id: 1
+  text: MyText

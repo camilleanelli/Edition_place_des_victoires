@@ -1,5 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
+.navbar-right {
+  margin-right: 30px;
+}
+
+
+
+ /* This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
@@ -13,5 +18,5 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets"
-@import "bootstrap"
+@import "bootstrap-sprockets";
+@import "bootstrap";
