@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%=yield(:title)%> | Editions Mengès Place Des Victoires</title>
+  <head>
+    <title><%=yield(:title)%> | Editions Mengès Place Des Victoires</title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -10,24 +10,29 @@
   </head>
 
 <body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
 
-<header>
-  <nav class="navbar navbar-inverse" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Editions Menges Place des Victoires</a>
-      <ul class="navbar-right">
-        <li class="navbar-right"><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/">Home</a></li>
-        <li class="navbar-right"><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/static_pages/contact">Contact et info pratiques</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Editions Mengès</a>
+        </div>
 
-</header>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact et info pratiques</a></li>
+            <li><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/authors">Auteurs</a></li>
+            <li><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/categories">Thèmes</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+<div id="fb-root"></div>
   
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
+   <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -37,11 +42,14 @@
   
 <div class="content">
 
-<%= yield %>
-  </div>
+    <%= yield %>
+</div>
   
-  <footer>
-<div class="fb-like" data-href="https://www.facebook.com/Editions.Place.des.Victoires" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-  </footer>
+<footer>
+   <div class="fb-like" data-   href="https://www.facebook.com/Editions.Place.des.Victoires" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true">
+   </div>
+</footer>
+  
 </body>
+  
 </html>
