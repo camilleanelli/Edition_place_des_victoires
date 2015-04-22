@@ -6,6 +6,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -14,32 +15,24 @@
       <div class="container-fluid">
 
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Editions Mengès</a>
+          <a class="navbar-brand" href="/">Editions Mengès</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact et info pratiques</a></li>
-            <li><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/authors">Auteurs</a></li>
-            <li><a href="http://edition-place-des-victoires-219013.euw1.nitrousbox.com/categories">Thèmes</a></li>
-            <li><a href="about.html.erb">A propos</a></li>
+            <li><a href="/static_pages/contact">Contact et info pratiques</a></li>
+            <li><a href="/authors">Auteurs</a></li>
+            <li><a href="/categories">Thèmes</a></li>
+            <li><a href="/static_pages/about">A propos</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
 
-<div id="fb-root"></div>
-  
-   <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
   
 <div class="content">
 
@@ -47,13 +40,30 @@
 </div>
   
 <footer>
-   <div class="fb-like" data-   href="https://www.facebook.com/Editions.Place.des.Victoires" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true">
-     
-  <div class="mention">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4">
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Mentions légales
+</button>
+      </div>
+      <div class="col-md-4">
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Mentions légales
+  </button>
      </div>
+     <div class="col-md-4">
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Mentions légales
+  </button>
+      </div>
+    </div>
    </div>
+ </div>
+      
 </footer>
-  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  
 </body>
   
 </html>
