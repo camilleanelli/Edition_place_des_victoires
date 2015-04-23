@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   
   get 'static_pages/mention'
   
+  get 'images/google_map'
+  
+  get 'images/facebook2'
   
   root 'static_pages#home'
 

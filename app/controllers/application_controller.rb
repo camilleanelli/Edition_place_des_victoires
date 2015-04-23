@@ -9,4 +9,11 @@ class ApplicationController < ActionController::Base
   def contact
   end
   
+  def google_map
+  end
+  
+  def facebook2
+  end
+  
+  
 end
