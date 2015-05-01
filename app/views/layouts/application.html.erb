@@ -3,19 +3,19 @@
   <head>
     <title><%=yield(:title)%> | Editions Mengès Place Des Victoires</title>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
+  <nav class="navbar navbar-inverse navbar-fixed-top header">
+    <div class="container-fluid">
 
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">Editions Mengès</a>
+          <a class="navbar-brand" href="/"><em>Les Editions Mengès</em></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,48 +28,22 @@
             <li><a href="/static_pages/about">A propos</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-
-
-  
-<div class="content">
+    </div><!-- /.container-fluid -->
+  </nav>
 
     <%= yield %>
-</div>
-  
-<footer>
-  <div class="container">
-    <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-3">
-<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  <a href="/static_pages/mention">Mentions légales</a>
-</button>
-      </div>
-      <div class="col-md-3">
-<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Newsletter
-  </button>
-     </div>
-     <div class="col-md-3">
-<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Liens
-  </button>
-      </div>
-         <div class="col-md-3">
-<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-<div><img src="/images/facebook2"/>Nous suivre</div>
-  </button>
-      </div>
-        
-    </div>
-   </div>
- </div>
-      
+
+<footer class="center-block">
+  <ul class="list-inline text-center">
+    <li><a href="#"><i class="fa fa-envelope fa-2x"></i><p> Newsletter</p></a></li>
+    <li><a href="#"><i class="fa fa-shopping-cart fa-2x"></i><p> Où trouver nos livres?</p></a></li>
+    <li><a href="#"><i class="fa fa-facebook fa-2x"></i><p> Nous suivre</p></a></li>
+    <li></li>
+  </ul>
 </footer>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  
-</body>
+
+  
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  
+  </body>
   
 </html>

@@ -1,20 +1,52 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding:0;
+}
+
+.header {
+  height: 100px;
+  font-size: 20px;
+}
+
+.intro {
+  margin-top: 150px;
+}
+
+.spacer {
+  height: 100px;
+}
+
 #venise {
   width: 600px;
   height: 300px;
 }
 
-.fa-fa facebook {
-  width : 50px;
-  margin-right: 20px;
-}
-.content {
+
+
+footer {
+  font-size: 20px;
+  color: grey;
+  background-color: black;
+  height: 150px;
+  padding-top: 50px;
+  margin-top: 50px;
   
-  height: auto;
 }
 
-.content  {
-  height:550px;
-  
+footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.about {
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
  /* This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -31,5 +63,3 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
