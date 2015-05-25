@@ -6,7 +6,7 @@ class CreateBooks < ActiveRecord::Migration
       t.integer :page_count
       t.integer :weight
       t.string :cover_type
-      t.integer :isbn
+      t.string :isbn
       t.integer :illustration_count
       t.integer :price
       t.text :description
