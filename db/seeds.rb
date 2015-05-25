@@ -1,1 +1,0 @@
-Book.create!(name: 'harry Potter' id:1)
