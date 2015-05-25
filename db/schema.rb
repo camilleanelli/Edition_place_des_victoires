@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150525090805) do
 
-  create_table "authors", force: true do |t|
+  create_table "authors", force: :cascade do |t|
     t.string   "firstname"
     t.string   "lastname"
     t.text     "bio"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150525090805) do
     t.datetime "updated_at"
   end
 
-  create_table "authors_books", id: false, force: true do |t|
+  create_table "authors_books", id: false, force: :cascade do |t|
     t.integer "author_id", null: false
     t.integer "book_id",   null: false
   end
@@ -29,13 +29,13 @@ ActiveRecord::Schema.define(version: 20150525090805) do
   add_index "authors_books", ["author_id", "book_id"], name: "index_authors_books_on_author_id_and_book_id"
   add_index "authors_books", ["book_id", "author_id"], name: "index_authors_books_on_book_id_and_author_id"
 
-  create_table "books", force: true do |t|
+  create_table "books", force: :cascade do |t|
     t.string   "title"
     t.string   "size"
     t.integer  "page_count"
     t.integer  "weight"
     t.string   "cover_type"
-    t.integer  "isbn"
+    t.string   "isbn"
     t.integer  "illustration_count"
     t.integer  "price"
     t.text     "description"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20150525090805) do
     t.datetime "updated_at"
   end
 
-  create_table "categories", force: true do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
