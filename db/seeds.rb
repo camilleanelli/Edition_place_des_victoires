@@ -8,4 +8,4 @@ book1.authors << author1
 book1.authors << author2
 
 
-AdminUser.create!(email: "camilleanelli32@gmail.com", password: "camcamcam", password_confirmation: "camcamcam")
+AdminUser.create!(email: "admin@example.com", password: "camcamcam", password_confirmation: "camcamcam")
