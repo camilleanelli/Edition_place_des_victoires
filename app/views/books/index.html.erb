@@ -2,14 +2,12 @@
 
 
     <% @books.each do |letter, books| %>
-      ========================================== <br>
-      <%= letter %> <br>
-      <% books.each do | book| %>
-      <%= book.title %><br>
 
- 
-      <% end %>
+    <%= letter %><br>
+   <% books.each do |book| %>
+   <%= book.title %><br>
+   <% end %>
+
+
     <% end %>
 <br>
-
-<%= link_to 'New Book', new_book_path %>

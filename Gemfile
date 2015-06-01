@@ -29,6 +29,7 @@ gem 'rails_admin'
 gem 'devise'
 
 group :development, :test do
+  gem 'pry-byebug'
   gem 'faker'
   gem 'awesome_print'
   gem 'sqlite3',     '1.3.9'
