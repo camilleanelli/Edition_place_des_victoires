@@ -4,7 +4,8 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.order(:title).group_by { |book| book.title.first }
+    @books = Book.order(:title).group_by { |book| book.title.first }.page params[:page]
+
   end
 
   # GET /books/1

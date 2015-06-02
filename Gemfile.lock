@@ -214,6 +214,7 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   pg
   pry-byebug
   rails
