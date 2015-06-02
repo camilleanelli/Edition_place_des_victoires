@@ -1,14 +1,14 @@
 <h1>Livres</h1>
 
-  <%= paginate @books, :window => 2 %>
+
 
 <div class="container-fluid">
-  <div class="row">
+  <div class="row text-center photobook">
      <% @books.each do |book| %>
   
        <div class="col-md-3">
-          <%= book.title %>
-          <img src="..." alt="..." class="img-thumbnail">   
+          <%= book.title %><br>
+          <img src="http://placehold.it/150x200"> 
        
        </div>
     
@@ -17,6 +17,8 @@
 
    
 </div>
+
+<nav><%= paginate @books, :window => 2 %></nav>
 
 
 
