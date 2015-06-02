@@ -1,13 +1,13 @@
 <h1>Livres</h1>
 
+<%= paginate @books, :window => 2 %>
 
-    <% @books.each do |letter, books| %>
+    <% @books.each do |books| %>
 
-    <%= letter %><br>
-   <% books.each do |book| %>
-   <%= book.title %><br>
-   <% end %>
+    
+   <%= books.title %><br>
+<% end %>
 
 
-    <% end %>
-<br>
+    
+
