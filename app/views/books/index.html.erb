@@ -1,13 +1,27 @@
 <h1>Livres</h1>
 
 
-    <% @books.each do |letter, books| %>
 
-    <%= letter %><br>
-   <% books.each do |book| %>
-   <%= book.title %><br>
-   <% end %>
+<div class="container-fluid">
+  <div class="row text-center photobook">
+     <% @books.each do |book| %>
+  
+       <div class="col-md-3">
+          <%= book.title %><br>
+          <img src="http://placehold.it/150x200"> 
+       
+       </div>
+    
+     <% end %>
+  </div>
+
+   
+</div>
+
+<nav><%= paginate @books, :window => 2 %></nav>
 
 
-    <% end %>
-<br>
+
+
+    
+
