@@ -1,12 +1,12 @@
-<h1>Livres</h1>
+<h1 class='text-center'>Livres</h1>
 
 
 
-<div class="container-fluid">
-  <div class="row text-center photobook">
+<div class="container-fluid photobook">
+  <div class="row text-center">
      <% @books.each do |book| %>
   
-       <div class="col-md-3">
+       <div class="col-md-3 photobook">
           <%= book.title %><br>
           <img src="http://placehold.it/150x200"> 
        

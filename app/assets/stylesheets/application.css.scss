@@ -12,6 +12,10 @@ body {
   font-size: 20px;
 }
 
+.nav a:hover {
+  border-bottom: 1px solid white;
+}
+
 .intro {
   margin-top: 150px;
 }
@@ -28,12 +32,13 @@ body {
 
 
 footer {
+  
   font-size: 20px;
   color: grey;
   background-color: black;
   height: 150px;
   padding-top: 50px;
-  margin-top: 50px;
+  margin-bottom: 0;
   
 }
 
@@ -44,6 +49,7 @@ footer a {
 
 footer a:hover {
   color: white;
+  text-decoration: none;
 }
 
 
@@ -53,20 +59,16 @@ footer a:hover {
  
 }
 
-.border {
-  background-color: #BFAE99;
-  padding: 50px;
-  border: 3px solid grey;
-  border-radius: 10%;
-  box-shadow: 5px 5px 5px black;
-  margin: 20px;
-}
 
 .author {
   margin-top: 150px;
 }
 
+/*books*/
 
+.photobook {
+ padding: 20px;
+}
 
  /* This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
