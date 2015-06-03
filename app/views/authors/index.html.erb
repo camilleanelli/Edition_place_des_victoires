@@ -4,25 +4,16 @@
 
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+  
     <% @authors.each do |author| %>
-      <tr>
-        <td><%= author.firstname %></td>
-        <td><%= author.lastname %></td>
-        <td><%= author.bio %><td>
      
-      </tr>
+     <%= author.firstname %>
+     <%= author.lastname %>
+     <%= author.bio %><br>
+
+
     <% end %>
-  </tbody>
-</table>
 
 
 
