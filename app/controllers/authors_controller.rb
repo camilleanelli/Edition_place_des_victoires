@@ -4,7 +4,8 @@ class AuthorsController < ApplicationController
   # GET /authors
   # GET /authors.json
   def index
-    @authors = Author.order(:lastname)
+    @authors = Author.order(:lastname).group_by {|author| author.lastname.first }
+  
   end
 
   # GET /authors/1

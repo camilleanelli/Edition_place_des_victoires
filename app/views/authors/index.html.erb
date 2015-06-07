@@ -6,12 +6,15 @@
 
 
   
-    <% @authors.each do |author| %>
-     
-     <%= author.firstname %>
-     <%= author.lastname %>
-     <%= author.bio %><br>
-
+    <% @authors.each do |letter, author| %>
+     <%= letter %><br>
+    
+     <% author.each do |a| %>
+     	<%= a.lastname %>
+     	<%= a.firstname %>
+     	<%= a.bio %><br>
+     <% end %>
+    
 
     <% end %>
 
