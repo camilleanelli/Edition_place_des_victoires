@@ -1,21 +1,14 @@
 <h1 class='text-center'>Livres</h1>
 
-
-
 <div class="container-fluid photobook">
   <div class="row text-center">
-     <% @books.each do |book| %>
-  
-       <div class="col-md-3 photobook">
-          <%= book.title %><br>
-          <img src="http://placehold.it/150x200"> 
-       
-       </div>
-    
-     <% end %>
+    <% @books.each_with_index do |book, index| %>
+      <div class="col-md-3 photobook">
+        <%= book.title %><br>
+        <img src="http://loremflickr.com/150/200/book,cover,litterature?random=<%= index %>">
+      </div>
+    <% end %>
   </div>
-
-   
 </div>
 
 <nav><%= paginate @books, :window => 2 %></nav>
@@ -23,5 +16,5 @@
 
 
 
-    
+
 
