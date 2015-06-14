@@ -26,7 +26,7 @@ end
 
 
 def create_category
-  Category.create!(name: Faker::Name.name)
+  Category.create!(name: Faker::Commerce.department)
 end
 
 6.times do
