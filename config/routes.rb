@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :authors
 
-  resources :categories
+  resources :categories do
+    resources :books
+  end
 
-  resources :books
 
   get 'static_pages/home'
   

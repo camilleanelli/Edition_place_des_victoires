@@ -1,5 +1,11 @@
 <h1 class='text-center'>Livres</h1>
 
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= link_to category.name, category_books_path(category.id) %></li>
+  <% end %>
+</ul>
+
 <div class="container-fluid photobook">
   <div class="row text-center">
     <% @books.each_with_index do |book, index| %>
