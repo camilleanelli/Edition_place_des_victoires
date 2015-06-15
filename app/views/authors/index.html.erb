@@ -2,23 +2,12 @@
 
 <h1>Les auteurs</h1>
 
-
-
-
-  
-    <% @authors.each do |letter, author| %>
-     <%= letter %><br>
-    
-     <% author.each do |a| %>
-     	<%= a.lastname %>
-     	<%= a.firstname %>
-     	<%= a.bio %><br>
-     <% end %>
-    
-
-    <% end %>
-
-
+<% @authors.each do |letter, authors| %>
+  <%= letter %><br>
+  <% authors.each do |author| %>
+    <%= link_to "#{author.lastname} #{author.firstname}", author_path(author) %><br>
+  <% end %>
+<% end %>
 
 <div class="spacer"></div>
 </div>
