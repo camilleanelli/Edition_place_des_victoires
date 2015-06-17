@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :books
   end
 
+  resources :books
+
 
   get 'static_pages/home'
   

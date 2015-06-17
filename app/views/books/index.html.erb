@@ -2,7 +2,7 @@
 
 <ul>
   <% @categories.each do |category| %>
-    <li><%= link_to category.name, category_books_path(category.id) %></li>
+    <li><%= link_to category.name, category_books_path %></li>
   <% end %>
 </ul>
 
@@ -10,7 +10,7 @@
   <div class="row text-center">
     <% @books.each_with_index do |book, index| %>
       <div class="col-md-3 photobook">
-        <%= book.title %><br>
+        <%= link_to book.title, book_path(book)%><br>
         <%= image_tag(book.image_url) %>
       </div>
     <% end %>
